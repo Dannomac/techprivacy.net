@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function OS() {
+    document.title = "OS | Techprivacy";
     return (
         <>
             <Navbar/>

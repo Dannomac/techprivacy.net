@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 
 function Contact() {
+    document.title = "Contact | Techprivacy";
     return (
         <>
             <Navbar/>

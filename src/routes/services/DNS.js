@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar";
 
 function DNS() {
-    return (
+        document.title = "DNS | Techprivacy";
+        return (
         <>
             <Navbar/>
             <h1 className="mt-5">DNS</h1>

@@ -12,25 +12,25 @@ import Search from "./routes/services/Search";
 import Contact from "./routes/Contact";
 
 function App() {
-  return (
-      <>
-          <BrowserRouter>
-              <Routes>
-                  <Route path="/" element={<Index/>}/>
-                  <Route path="/software/browser" element={<Browser/>}/>
-                  <Route path="/software/email-client" element={<EmailClient/>}/>
-                  <Route path="/software/os" element={<OS/>}/>
-                  <Route path="/software/messaging" element={<Messaging/>}/>
-                  <Route path="/software/office" element={<Office/>}/>
-                  <Route path="/software/password-manager" element={<PasswordManager/>}/>
-                  <Route path="/services/vpn" element={<VPN/>}/>
-                  <Route path="/services/dns" element={<DNS/>}/>
-                  <Route path="/services/search" element={<Search/>}/>
-                  <Route path="/contact" element={<Contact/>}/>
-              </Routes>
-          </BrowserRouter>
-      </>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Index/>}/>
+                    <Route path="/software/browser" element={<Browser/>}/>
+                    <Route path="/software/email-client" element={<EmailClient/>}/>
+                    <Route path="/software/os" element={<OS/>}/>
+                    <Route path="/software/messaging" element={<Messaging/>}/>
+                    <Route path="/software/office" element={<Office/>}/>
+                    <Route path="/software/password-manager" element={<PasswordManager/>}/>
+                    <Route path="/services/vpn" element={<VPN/>}/>
+                    <Route path="/services/dns" element={<DNS/>}/>
+                    <Route path="/services/search" element={<Search/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;

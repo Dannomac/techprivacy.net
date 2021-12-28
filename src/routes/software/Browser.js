@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function Browser() {
+    document.title = "Browser | Techprivacy";
     return (
         <>
             <Navbar/>

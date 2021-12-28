@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function Messaging() {
+    document.title = "Messaging | Techprivacy";
     return (
         <>
             <Navbar/>

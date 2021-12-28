@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function EmailClient() {
+    document.title = "Email Client | Techprivacy";
     return (
         <>
             <Navbar/>

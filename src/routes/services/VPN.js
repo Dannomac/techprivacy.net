@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function VPN() {
+    document.title = "VPN | Techprivacy";
     return (
         <>
             <Navbar/>

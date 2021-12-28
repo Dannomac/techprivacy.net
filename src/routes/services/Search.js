@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function Search() {
+    document.title = "Search | Techprivacy";
     return (
         <>
             <Navbar/>

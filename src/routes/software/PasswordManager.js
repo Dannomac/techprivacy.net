@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 
 function PasswordManager() {
+    document.title = "Password Manager | Techprivacy";
     return (
         <>
             <Navbar/>

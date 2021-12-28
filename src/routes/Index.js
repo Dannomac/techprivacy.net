@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 
 function Index() {
+    document.title = "Home | Techprivacy";
     return (
         <>
             <Navbar/>
