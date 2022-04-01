@@ -1,32 +1,34 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Index from "./routes/Index";
-import Browser from "./routes/software/Browser";
-import EmailClient from "./routes/software/EmailClient";
-import OS from "./routes/software/OS";
-import Messaging from "./routes/software/Messaging";
-import Office from "./routes/software/Office";
-import PasswordManager from "./routes/software/PasswordManager";
-import VPN from "./routes/services/VPN";
-import DNS from "./routes/services/DNS";
-import Search from "./routes/services/Search";
-import Contact from "./routes/Contact";
+import PageLoad from "./components/PageLoad";
+import loadable from "@loadable/component";
+const Index = loadable(() => import("./routes/Index"));
+const Browser = loadable(() => import("./routes/software/Browser"));
+const EmailClient = loadable(() => import("./routes/software/EmailClient"));
+const OS = loadable(() => import("./routes/software/OS"));
+const Messaging = loadable(() => import("./routes/software/Messaging"));
+const Office = loadable(() => import("./routes/software/Office"));
+const PasswordManager = loadable(() => import("./routes/software/PasswordManager"));
+const VPN = loadable(() => import("./routes/services/VPN"));
+const Search = loadable(() => import("./routes/services/Search"));
+const DNS = loadable(() => import("./routes/services/DNS"));
+const Contact = loadable(() => import("./routes/Contact"));
 
 function App() {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Index/>}/>
-                    <Route path="/software/browser" element={<Browser/>}/>
-                    <Route path="/software/email-client" element={<EmailClient/>}/>
-                    <Route path="/software/os" element={<OS/>}/>
-                    <Route path="/software/messaging" element={<Messaging/>}/>
-                    <Route path="/software/office" element={<Office/>}/>
-                    <Route path="/software/password-manager" element={<PasswordManager/>}/>
-                    <Route path="/services/vpn" element={<VPN/>}/>
-                    <Route path="/services/dns" element={<DNS/>}/>
-                    <Route path="/services/search" element={<Search/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/" element={<Index fallback={<PageLoad />} />} />
+                    <Route path="/software/browser" element={<Browser fallback={<PageLoad />} />} />
+                    <Route path="/software/email-client" element={<EmailClient fallback={<PageLoad />} />} />
+                    <Route path="/software/os" element={<OS fallback={<PageLoad />} />} />
+                    <Route path="/software/messaging" element={<Messaging fallback={<PageLoad />} />} />
+                    <Route path="/software/office" element={<Office fallback={<PageLoad />} />} />
+                    <Route path="/software/password-manager" element={<PasswordManager fallback={<PageLoad />} />} />
+                    <Route path="/services/vpn" element={<VPN fallback={<PageLoad />} />} />
+                    <Route path="/services/dns" element={<DNS fallback={<PageLoad />} />} />
+                    <Route path="/services/search" element={<Search fallback={<PageLoad />} />} />
+                    <Route path="/contact" element={<Contact fallback={<PageLoad />} />} />
                 </Routes>
             </BrowserRouter>
         </>
