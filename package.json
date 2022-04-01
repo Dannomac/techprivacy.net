@@ -15,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npx eslint src/*/*.js",
-    "test:fix": "npx eslint --fix src/*/*.js",
+    "test": "npx eslint 'src/**/*.js'",
+    "test:fix": "npx eslint --fix 'src/**/*.js'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
