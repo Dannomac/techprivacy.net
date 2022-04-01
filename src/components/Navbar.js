@@ -48,7 +48,7 @@ function Navbar() {
                     </div>
                     <li className="nav-item">
                         <a className="nav-link"
-                            href="https://www.buymeacoffee.com/techprivacy.net">Donate</a>
+                            href="https://ko-fi.com/dannomac">Donate</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/contact">Contact</a>
