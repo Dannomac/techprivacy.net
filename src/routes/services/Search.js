@@ -4,7 +4,7 @@ function Search() {
     document.title = "Search | Techprivacy";
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <h1 className="mt-5">Search</h1>
             <div data-ea-publisher="techprivacy-net" data-ea-type="image"></div>
             <p className="fw-bold anchored">DuckDuckGo</p>

@@ -4,7 +4,7 @@ function DNS() {
     document.title = "DNS | Techprivacy";
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <h1 className="mt-5">DNS</h1>
             <div data-ea-publisher="techprivacy-net" data-ea-type="image"></div>
             <p className="fw-bold anchored">Quad9</p>

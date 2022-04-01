@@ -4,7 +4,7 @@ function OS() {
     document.title = "OS | Techprivacy";
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <h1 className="mt-5">Operating system</h1>
             <div data-ea-publisher="techprivacy-net" data-ea-type="image"></div>
             <p className="fw-bold anchored">Ubuntu</p>

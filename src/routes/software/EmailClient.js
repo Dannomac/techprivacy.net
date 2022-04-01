@@ -4,7 +4,7 @@ function EmailClient() {
     document.title = "Email Client | Techprivacy";
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <h1 className="mt-5">Email client</h1>
             <div data-ea-publisher="techprivacy-net" data-ea-type="image"></div>
             <p className="fw-bold anchored">Mozilla Thunderbird</p>

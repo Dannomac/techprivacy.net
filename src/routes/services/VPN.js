@@ -4,7 +4,7 @@ function VPN() {
     document.title = "VPN | Techprivacy";
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <h1 className="mt-5">VPN</h1>
             <div data-ea-publisher="techprivacy-net" data-ea-type="image"></div>
             <p className="fw-bold anchored">Mullvad</p>

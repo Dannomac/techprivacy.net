@@ -21,18 +21,18 @@ function Navbar() {
             <nav className="navbar navbar-expand-md navbar-dark">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="navbar-brand" href="/"><img src="/assets/icon.png" alt="Techprivacy.net logo" title="Techprivacy.net"/></a>
+                        <a className="navbar-brand" href="/"><img src="/assets/icon.png" alt="Techprivacy.net logo" title="Techprivacy.net" /></a>
                     </li>
                     <div style={dropdown}>
                         <a className="nav-link dropdown-toggle" href="#" onClick={() => {setShowSoftware(!showSoftware);}}>Software</a>
                         {showSoftware &&
                             <div style={dropdownContent} onMouseLeave={() => {setShowSoftware(!showSoftware);}}>
-                                <a className="text-light" href="/software/browser">Browser</a> <br/>
-                                <a className="text-light" href="/software/email-client">Email client</a> <br/>
-                                <a className="text-light" href="/software/os">Operating system</a> <br/>
-                                <a className="text-light" href="/software/messaging">Messaging</a> <br/>
-                                <a className="text-light" href="/software/office">Office</a> <br/>
-                                <a className="text-light" href="/software/password-manager">Password manager</a> <br/>
+                                <a className="text-light" href="/software/browser">Browser</a> <br />
+                                <a className="text-light" href="/software/email-client">Email client</a> <br />
+                                <a className="text-light" href="/software/os">Operating system</a> <br />
+                                <a className="text-light" href="/software/messaging">Messaging</a> <br />
+                                <a className="text-light" href="/software/office">Office</a> <br />
+                                <a className="text-light" href="/software/password-manager">Password manager</a> <br />
                             </div>
                         }
                     </div>
@@ -40,9 +40,9 @@ function Navbar() {
                         <a className="nav-link dropdown-toggle" href="#" onClick={() => {setShowServices(!showServices);}}>Services</a>
                         {showServices &&
                             <div style={dropdownContent} onMouseLeave={() => {setShowServices(!showServices);}}>
-                                <a className="text-light" href="/services/vpn">VPN</a> <br/>
-                                <a className="text-light" href="/services/dns">DNS</a> <br/>
-                                <a className="text-light" href="/services/search">Search</a> <br/>
+                                <a className="text-light" href="/services/vpn">VPN</a> <br />
+                                <a className="text-light" href="/services/dns">DNS</a> <br />
+                                <a className="text-light" href="/services/search">Search</a> <br />
                             </div>
                         }
                     </div>

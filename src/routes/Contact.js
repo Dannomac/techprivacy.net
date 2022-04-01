@@ -4,7 +4,7 @@ function Contact() {
     document.title = "Contact | Techprivacy";
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <h1 className="mt-5">Contact</h1>
             <div data-ea-publisher="techprivacy-net" data-ea-type="image"></div>
             <p>Email:</p>
