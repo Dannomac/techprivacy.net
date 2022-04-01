@@ -1,6 +1,7 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PageLoad from "./components/PageLoad";
 import loadable from "@loadable/component";
+import Helmet from "react-helmet";
 const Index = loadable(() => import("./routes/Index"));
 const Browser = loadable(() => import("./routes/software/Browser"));
 const EmailClient = loadable(() => import("./routes/software/EmailClient"));
@@ -16,6 +17,11 @@ const Contact = loadable(() => import("./routes/Contact"));
 function App() {
     return (
         <>
+            <Helmet>
+                <title>Techprivacy</title>
+                <link rel="canonical" href="https://techprivacy.net" />
+                <link href="/assets/icon.png" rel="icon" />
+            </Helmet>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Index fallback={<PageLoad />} />} />
