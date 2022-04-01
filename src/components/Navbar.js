@@ -6,7 +6,7 @@ function Navbar() {
     const dropdown = {
         position: "relative",
         display: "inline-block"
-    }
+    };
     const dropdownContent = {
         position: "absolute",
         backgroundColor: "#1f1f1f",
@@ -24,9 +24,9 @@ function Navbar() {
                         <a className="navbar-brand" href="/"><img src="/assets/icon.png" alt="Techprivacy.net logo" title="Techprivacy.net"/></a>
                     </li>
                     <div style={dropdown}>
-                        <a className="nav-link dropdown-toggle" href="#" onClick={() => {setShowSoftware(!showSoftware)}}>Software</a>
+                        <a className="nav-link dropdown-toggle" href="#" onClick={() => {setShowSoftware(!showSoftware);}}>Software</a>
                         {showSoftware &&
-                            <div style={dropdownContent} onMouseLeave={() => {setShowSoftware(!showSoftware)}}>
+                            <div style={dropdownContent} onMouseLeave={() => {setShowSoftware(!showSoftware);}}>
                                 <a className="text-light" href="/software/browser">Browser</a> <br/>
                                 <a className="text-light" href="/software/email-client">Email client</a> <br/>
                                 <a className="text-light" href="/software/os">Operating system</a> <br/>
@@ -37,9 +37,9 @@ function Navbar() {
                         }
                     </div>
                     <div style={dropdown}>
-                        <a className="nav-link dropdown-toggle" href="#" onClick={() => {setShowServices(!showServices)}}>Services</a>
+                        <a className="nav-link dropdown-toggle" href="#" onClick={() => {setShowServices(!showServices);}}>Services</a>
                         {showServices &&
-                            <div style={dropdownContent} onMouseLeave={() => {setShowServices(!showServices)}}>
+                            <div style={dropdownContent} onMouseLeave={() => {setShowServices(!showServices);}}>
                                 <a className="text-light" href="/services/vpn">VPN</a> <br/>
                                 <a className="text-light" href="/services/dns">DNS</a> <br/>
                                 <a className="text-light" href="/services/search">Search</a> <br/>
@@ -48,14 +48,14 @@ function Navbar() {
                     </div>
                     <li className="nav-item">
                         <a className="nav-link"
-                           href="https://www.buymeacoffee.com/techprivacy.net">Donate</a>
+                            href="https://www.buymeacoffee.com/techprivacy.net">Donate</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/contact">Contact</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link"
-                           href="https://github.com/Dannomac/techprivacy.net">GitHub</a>
+                            href="https://github.com/Dannomac/techprivacy.net">GitHub</a>
                     </li>
                 </ul>
             </nav>
