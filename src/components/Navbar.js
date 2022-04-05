@@ -57,6 +57,11 @@ function Navbar() {
                         <a className="nav-link"
                             href="https://github.com/Dannomac/techprivacy.net">GitHub</a>
                     </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="https://donate.redcross.ie/" target="_blank" rel="noreferrer">
+                            Help relief efforts in Ukraine
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </>
