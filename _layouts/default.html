@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/icon.png" rel="icon" />
+    <script src="/assets/jquery-3.6.0.min.js"></script>
+    <title>{{page.title}} | Techprivacy</title>
+    <style>
+        body {
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light text-center">
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="/"><img src="/assets/icon.png" alt="Techprivacy.net logo"
+                        title="Techprivacy.net"></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" onclick="$('#software').toggle()">Software</a>
+                <div class="dropdown-menu dropdown-menu-dark" id="software">
+                    <a class="dropdown-item" href="/software/browser">Browser</a>
+                    <a class="dropdown-item" href="/software/email-client">Email client</a>
+                    <a class="dropdown-item" href="/software/os">Operating system</a>
+                    <a class="dropdown-item" href="/software/messaging">Messaging</a>
+                    <a class="dropdown-item" href="/software/office">Office</a>
+                    <a class="dropdown-item" href="/software/password-manager">Password manager</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" onclick="$('#services').toggle()">Services</a>
+                <div class="dropdown-menu dropdown-menu-dark" id="services">
+                    <a class="dropdown-item" href="/services/vpn">VPN</a>
+                    <a class="dropdown-item" href="/services/dns">DNS</a>
+                    <a class="dropdown-item" href="/services/search">Search</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ko-fi.com/Dannomac">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/Dannomac/techprivacy.net">GitHub</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://donate.redcross.ie/">Help relief efforts in Ukraine</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>{{page.title}}</h1>
+    {{content}}
+    <script>
+        $(".dropdown-menu").on("mouseleave", () => {
+            $(".dropdown-menu").hide();
+        });
+    </script>
+</body>
+</html>
