@@ -9,6 +9,6 @@ It can be self hosted or cloud hosted.
 It supports most browsers.
 
 ### KeyPassXC  
-KeePassXC is an open source fork of the now discontinued KeePass.  
+KeePassXC is an open source fork of the now discontinued KeePassX.  
 It stores passwords in an encrypted database file on your local filesystem.  
 You can store the database file on a secure cloud provider.
