@@ -14,7 +14,11 @@ Techprivacy uses Jekyll as its static site generator.
 `jekyll serve --livereload`  
 **Build for production**  
 ` jekyll build`  
-Contents will be in the _site directory
+Contents will be in the _site directory  
+**Full production build (with ad scripts)**  
+`bash build.sh`  
+Contents will be in the _site directory  
+This build will include production only things like ad scripts
 
 # Contribution
 If you would like to contribute to this project, start by reading [CONTRIBUTING.md](CONTRIBUTING.md)
